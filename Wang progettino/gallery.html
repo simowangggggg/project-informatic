@@ -1,0 +1,101 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="gallery.css">
+<script type="text/javascript"></script>
+  </head>
+
+<body align="center">
+  <div class="head"><img src="head2.jpg" width="100%" height="480px"/></div>
+
+  <br/>
+
+  <div id="se"><ul><li><a href="homepage.html"target="_self">Home</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="history.html"target="_self">Biography</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="article.html"target="_self">Articles</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="gallery.html"target="_self">Gallery</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="collection.html"target="_self">Collection</a>
+  </li></ul></div>
+
+  <hr/>
+
+  <img src="arrow2.jpg" class="bottom" id="last">
+  <img src="g1.png" class="window" id="pic1">
+  <img src="g2.png" class="window" id="pic2">
+  <img src="g3.png" class="window" id="pic3">
+  <img src="g4.png" class="window" id="pic4">
+  <img src="g5.jpg" class="window" id="pic5">
+  <img src="arrow2.jpg" class="bottom2" id="next">
+  <br>
+
+  <img src="g1.png" id="pic_large">
+
+  <script>
+  let last = document.getElementById("last");
+  let next = document.getElementById("next");
+  let contatore = 1;
+
+  let pic1 = document.getElementById("pic1");
+  let pic2 = document.getElementById("pic2");
+  let pic3 = document.getElementById("pic3");
+  let pic4 = document.getElementById("pic4");
+  let pic5 = document.getElementById("pic5");
+  let pic_large = document.getElementById("pic_large");
+
+  function carica_pic1() {
+    pic_large.setAttribute('src', "g1.png");
+  }
+
+  function carica_pic2() {
+    pic_large.setAttribute('src', "g2.png");
+  }
+
+  function carica_pic3() {
+    pic_large.setAttribute('src', "g3.png");
+  }
+
+  function carica_pic4() {
+    pic_large.setAttribute('src', "g4.png");
+  }
+
+  function carica_pic5() {
+    pic_large.setAttribute('src', "g5.jpg");
+  }
+
+  pic1.addEventListener('click', carica_pic1);
+  pic2.addEventListener('click', carica_pic2);
+  pic3.addEventListener('click', carica_pic3);
+  pic4.addEventListener('click', carica_pic4);
+  pic5.addEventListener('click', carica_pic5);
+
+  function carica_last() {
+    contatore = contatore - 1;
+    if (contatore < 1) {
+      contatore = 5;
+    }
+    let immagine = "g" + contatore + ".png";
+    pic_large.setAttribute('src', immagine);
+  }
+
+  function carica_next() {
+    contatore = contatore + 1;
+    if (contatore > 5) {
+      contatore = 1;
+    }
+    let immagine = "g" + contatore + ".png";
+    pic_large.setAttribute('src', immagine);
+  }
+  last.addEventListener('click', carica_last);
+  next.addEventListener('click', carica_next);
+
+
+  </script>
+
+<h1 align="center">Artworks of Alexander Calder<h1>
+
+
+  </body>
+  </html>

@@ -1,0 +1,100 @@
+a:link {color: black; text-decoration: none}
+a:visited {color: black; text-decoration: none}
+a:hover {color: blue; text-decoration: underline}
+
+body{background-color: rgba(191,191,191,1);
+  }
+#se{font-family: “Bodoni-black ”;
+font-size: 17}
+
+
+
+
+h2{
+color: Black;
+font-family: "Bodoni";
+font-size: 30;
+margin-right: 10%;
+}
+
+
+h1{float: right;
+color: black;
+font-family: "Bodoni";
+font-size: 30;
+text-align: center;
+margin-top: 32%}
+
+h3{float: left;
+color: black;
+font-family: "Bodoni";
+font-size: 30;
+margin-top: 0%;
+margin-left: 10%}
+
+h4{text-align:center
+color: black;
+font-family: "Bodoni";
+font-size: 25;
+margin-top: 5%;
+margin-right: 10%}
+
+h5{float: left;
+color: black;
+font-family: "Bodoni";
+font-size: 20;
+margin-top: 8%;
+margin-left: 2%}
+}
+
+.y{
+margin-left: 20%;
+margin-top: 3%}
+
+.w{
+
+margin-top: 35%}
+
+.z{
+margin-top: 70%}
+
+
+#p2{float: right;
+color: Black;
+font-family: Bodoni;
+font-size: 14;
+width:400px;
+margin-right:25%
+}
+
+#pi{float: right;
+color: Black;
+font-family: Bodoni;
+font-size: 18;
+width:800px;
+height:480px;
+margin-right: 20%
+}
+
+
+p{color: Black;
+  font-family: Bodoni;
+  font-size: 18;}
+
+#k {margin-left: 0%;
+margin-top: 7%}
+
+#list{margin-left: 25%;
+      font-size: 20;}
+
+#collection{
+  animation-name: collection;
+  animation-duration: 4s;
+}
+@keyframes collection {
+  20%{left:0px; top:10px;}
+  40%{left:100px; top:200px;}
+  60%{left:20px; top:300px;}
+  100%{left:400px; top:150px;}
+
+}

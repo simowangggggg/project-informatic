@@ -1,0 +1,24 @@
+a:link {color: black; text-decoration: none}
+a:visited {color: black; text-decoration: none}
+a:hover {color: red; text-decoration: underline}
+
+body{background-color: white;}
+
+.window {
+  width : 100px;
+  height : 100px;
+}
+.bottom {
+  width : 90px;
+  height : 60px;
+}
+
+.bottom2 {
+  width : 90px;
+  height : 60px;
+  transform: scaleX(-1);
+}
+
+h1{font-size: "30px";
+font-family: "Times";
+color: black}

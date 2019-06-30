@@ -1,0 +1,23 @@
+a:link {color: black; text-decoration: none}
+a:visited {color: black; text-decoration: none}
+a:hover {text-decoration: underline}
+
+body{background-image: url("01.png");
+background-size: 100%;
+background-repeat: no-repeat;}
+
+#enter{font-size: "90px";
+font-family: "Times";}
+
+#logo{float: inherit;
+  position: absolute;
+  animation-name: go;
+animation-duration: 10s;
+animation-iteration-count: infinite;}
+@keyframes go {
+  0% {margin-left: 0px; margin-top: 265px; }
+  25% {margin-left: 615px; margin-top: 530px; }
+  50% {margin-left: 1230px; margin-top: 265px; }
+  75%  {margin-left: 615px; margin-top: 0px; }
+  100% {margin-left: 615px; margin-top: 265px; }
+}
